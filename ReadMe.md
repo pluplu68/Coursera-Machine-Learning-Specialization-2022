@@ -99,7 +99,7 @@ The Specialization is divided into 3 courses:
 * __Logistic regression__ is a classification algorithm that is used to predict the probability that an input belongs to a certain class.
   * The logistic regression model is as follows: $f(x) = \frac{1}{1 + e^{-z}}$ where $z = w^T x + b$.
   * The logistic regression model outputs a value between 0 and 1, which can be interpreted as the probability that the input belongs to a certain class.
-* A __Decision **Boundary**__ is a line that separates the 0 and 1 regions.
+* A __Decision **Boundary**__ is a line that separates the 0 and 1 regions. Z = W x + b = 0
   * The decision boundary is a straight line for logistic regression.
 
 #### Cost function for logistic regression
