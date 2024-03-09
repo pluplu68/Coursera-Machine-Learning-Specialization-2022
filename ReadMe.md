@@ -89,7 +89,7 @@ The Specialization is divided into 3 courses:
     * If it is decreasing too slowly, then you might need to increase the __learning rate__.
   * If the cost function is not decreasing, then gradient descent is not working, or the learning rate is too big.
     * Try decreasing the __learning rate__.
-* Choosing the most appropriate features is known as __feature engineering__.
+* __feature engineering__: Using intuition to designnew features, bytransforming or combiningoriginal features.
 
 ### <u>Week 3: Classification</u>
 
