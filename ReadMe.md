@@ -207,12 +207,12 @@ The Specialization is divided into 3 courses:
 
 #### Advice for Applying Machine Learning
 * We have the tools to build a machine-learning model, but how do we know if it will work? There are a few ways we could improve our model:
-  * Get more training data.
-  * Try smaller sets of features.
-  * Try getting additional features.
-  * Try adding polynomial features.
-  * Try decreasing $\lambda$.
-  * Try increasing $\lambda$.
+  * Get more training data. -> fix high variance
+  * Try smaller sets of features. -> fix high variance
+  * Try getting additional features. -> fix high bias
+  * Try adding polynomial features.  -> fix high bias
+  * Try decreasing $\lambda$.  -> fix high bias
+  * Try increasing $\lambda$.  -> fix high variance
 * Choosing well means saving a lot of time that would otherwise be wasted, but choosing correctly could be tricky.
 * To evaluate the model, we can look at the fraction of misclassifications on the training set and test set.
   * If the training set error is low, but the test set error is high, then the model is overfitting.
