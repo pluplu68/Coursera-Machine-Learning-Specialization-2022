@@ -196,6 +196,9 @@ The Specialization is divided into 3 courses:
 
 #### Optimization
 * __Adam__ is an optimization algorithm that is used to update the parameters of a neural network and stands for __adaptive moment estimation__.
+* __Convolutional layer__: part of the previous layer's input
+  * fast computation
+  * less training data needed -> less chance of overfit
 
 ### <ul>Week 3: Advice for Applying Machine Learning</ul>
 
