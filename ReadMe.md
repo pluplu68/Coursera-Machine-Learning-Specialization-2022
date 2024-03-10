@@ -224,6 +224,10 @@ The Specialization is divided into 3 courses:
 * High bias means the model is underfitting, which means the model is too simple.
 * High variance means the model is overfitting, which means the model is too complex.
 * To establish a baseline we can look at human-level performance, or look at the performance of current models if there are any.
+  
+#### Evaluation
+* Choose the regularization $\lambda$
+* get Baseline (human level performance), compare it with $J_{train}$ and $J_{cv}$ to check high bias or high variance.
 
 #### Machine Learning Development Process
 * The iterative loop Andrew suggests:
