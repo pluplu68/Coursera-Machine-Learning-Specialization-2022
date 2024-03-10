@@ -1,5 +1,8 @@
 # Machine Learning Specialization 2022
 
+## Self study revision --Tianyi
+I revised and added key points for self study.
+
 ## Certificate
 [Machine Learning Specialization - Anri Lombard](https://www.coursera.org/account/accomplishments/specialization/certificate/A8QJ9M8LQ3Z8)
 
