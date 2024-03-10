@@ -236,19 +236,25 @@ The Specialization is divided into 3 courses:
 * The iterative loop Andrew suggests:
   1. Choose an architecture.
   2. Train the model.
-  3. Evaluate the model.
+  3. Evaluate the model. -> modify the model
   4. Analyze the results.
   5. Iterate.
-* Error analysis is the process of looking at the misclassifications and trying to understand why the model is making those mistakes. By categorizing misclassifications, we can try to understand what the model is doing wrong and try to fix it and look at where to focus our efforts.
+* __Error analysis__ is the process of looking at the misclassifications and trying to understand why the model is making those mistakes.
+  * By categorizing misclassifications, we can try to understand what the model is doing wrong and try to fix it and look at where to focus our efforts.
 * Adding more data is tempting, but it is not always the best solution. A better approach might be to evaluate which _type_ of data is necessary and then try to get more of that type of data. This could boost performance more than just adding more data.
-  * One way to add more data would be to augment the data we already have. __Data augmentation__ is the process of creating new data from the data we already have.
+* __Ways to add more data__:
+  1. __Data augmentation__ is the process of creating new data from the data we already have.
     * For example, if we have a dataset of images of cats, we could rotate the images, flip them, and change the brightness of the images to create new images.
-* It might be better to take a data-centric approach to machine learning, compared to a conventional model-centric approach.
-  * __Transfer Learning__ is the process of using a model that has already been trained on a different dataset to train a model on a new dataset.
+    * Usually does not heip to add purely random/meaningless noise to the data. eg: pixel noise
+  2. __Data Synthesis__: using artificial data inputs to create a newtraining example.
+    * It might be better to take a data-centric approach to machine learning, compared to a conventional model-centric approach.
+  3. __Transfer Learning__ is the process of using a model that has already been trained on a different dataset to train a model on a new dataset.
     * For example, we could use a model that has already been trained on the ImageNet dataset to train a model on the MNIST dataset.
-  * To apply transfer learning we would take a trained model and replace the last layer with a new layer that is specific to the new dataset.
+      * constraint: need to use the same input type!
+    * To apply transfer learning we would take a trained model and replace the last layer with a new layer that is specific to the new dataset.
+    * supervised pretraining -> then fine tuning
 * Full cycle of machine learning project:
-  1. Define the problem.
+  1. Define project, the problem.
   2. Collect the data.
   3. Prepare the data.
   4. Choose a model.
@@ -258,7 +264,7 @@ The Specialization is divided into 3 courses:
   8. Deploy the model.
   9. Monitor the model.
 * Machine Learning is affecting billions of people and it is important to make it fair and ethical by making them unbiased and transparent.
-  * Sometimes these models become viral due to their engagement and popularity, but they can also be harmful.
+  * So metimes these models become viral due to their engagement and popularity, but they can also be harmful.
 * Some guidelines Andrew has:
   1. Have a more diverse team and emphasize problems that might harm minority groups.
   2. Audit systems against possible harm before deployment.
